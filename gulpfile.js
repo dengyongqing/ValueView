@@ -18,14 +18,3 @@ gulp.task("webpack", function(callback) {
     callback();
   });
 });
-
-gulp.task('ftp', function () {
-    return gulp.src('./{sample,bundle}/**')
-        .pipe(ftp({
-            host: '172.16.58.153',
-            port: 21,
-            user: 'localtest',
-            pass: 'localtest'
-        }))
-        .pipe(gutil.noop());
-});
