@@ -1,6 +1,4 @@
 var gulp = require('gulp');
-var gutil = require('gulp-util');
-var ftp = require('gulp-ftp');
 var webpack = require("webpack");
 var webpackConfig = require("./webpack.config.js");
 
